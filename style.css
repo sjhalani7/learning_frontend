@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 100; /* High z-index to keep the navbar on top */
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgba(51, 51, 51, 0.50) /* Make navbar background transparent */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center     ;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    /* font-weight: bold; */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 10px; /* Spacing around buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+.navbar ul li a:hover {
+    background-color:rgba(255, 255, 255, 0.2);
+    color: black;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    height: 24px; /* Adjust as needed */
+    width: auto;
+    margin-left: 10px; /* Space between icons */
+}
+.navbar .social-links {
+    margin-left:0%; /* This will push the social links to the right */
+}
+
+.navbar.solid-background {
+    background-color: rgba(51, 51, 51, 1); /* Solid color */
+}
+
+.background-image {
+    background-image: url('your-background.jpg'); /* Replace with your background image */
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between; /* Adjust content spacing */
+    align-items: center;
+    text-align: left;
+}
+
+.welcome-text,
+.profile-container {
+    color: white;
+    flex: 1; /* This will ensure both the welcome text and profile picture container take up equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.welcome-text {
+    padding-left: 5%; /* Add some padding if needed */
+}
+
+.welcome-text h1 {
+    margin-bottom: 20px; /* Add some padding if needed */
+}
+
+.welcome-text p {
+    margin-top: 0; /* Add some padding if needed */
+}
+
+.profile-container img {
+    margin-top: 10%;
+    max-height: 60vh; /* Adjust max-height to control the size of the image */
+    max-width: 100%; /* Adjust max-width to maintain aspect ratio within the flex item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 100%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the full area */
+}
+
+
+
+.bio {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+}
